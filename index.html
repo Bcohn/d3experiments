@@ -22,6 +22,45 @@ body {
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script>
 
+function speciesSelect(array,species){
+ return array.filter(function(d){
+   return d.species===species;
+ });
+  }
+
+
+
+function regressionOutput(array,x,y){
+  var meanX = mean(array,x);
+  var meanY = mean(array,y);
+  var dotProductXY = dotProduct(array,x,y);
+  var dotProductXX = dotProduct(array,x,x);
+  var beta = (dotProductXY-meanX*meanY)/(dotProductXX-meanX^2);
+  var alpha = meanY - beta*meanX;
+  return {'alpha':alpha,'beta':beta};
+}
+
+
+function dotProduct(array,x,y){
+  var result = 0;
+  array.forEach(function(d) {
+    result += d[x]*d[y];
+  });
+  return result;
+}
+
+function mean(array,x){
+  var result = 0;
+  array.forEach(function(d) {
+    result += d[x];
+  });
+  result=result/array.length;
+  return result;
+}
+
+
+
+
 var margin = {top: 20, right: 20, bottom: 30, left: 40},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
@@ -55,9 +94,46 @@ d3.tsv("data.tsv", function(error, data) {
     d.sepalLength = +d.sepalLength;
     d.sepalWidth = +d.sepalWidth;
   });
+  
+  regressionstats=[regressionOutput(speciesSelect(data,"setosa"),"sepalWidth","sepalLength"),regressionOutput(speciesSelect(data,"versicolor"),"sepalWidth","sepalLength"),regressionOutput(speciesSelect(data,"virginica"),"sepalWidth","sepalLength")];
+  var xlimits=d3.extent(data, function(d) { return d.sepalWidth;}) 
+  xlimits[0]=0;
+  var ylimits=d3.extent(data, function(d) { return d.sepalLength;}) 
+  ylimits[0]=0;
 
-  x.domain(d3.extent(data, function(d) { return d.sepalWidth; })).nice();
-  y.domain(d3.extent(data, function(d) { return d.sepalLength; })).nice();
+  x.domain(xlimits).nice();
+  y.domain(ylimits).nice();
+
+
+  var lineData1 = [ { "x": xlimits[0],   "y": regressionstats[0].alpha},  { "x": xlimits[1],  "y":regressionstats[0].alpha+regressionstats[0].beta*xlimits[1] }];
+  var lineData2 = [ { "x": xlimits[0],   "y": regressionstats[1].alpha},  { "x": xlimits[1],  "y":regressionstats[1].alpha+regressionstats[1].beta*xlimits[1] }];
+  var lineData3 = [ { "x": xlimits[0],   "y": regressionstats[2].alpha},  { "x": xlimits[1],  "y":regressionstats[2].alpha+regressionstats[2].beta*xlimits[1] }];
+
+  var lineFunction = d3.svg.line()
+                      .x(function(d) { return x(d.x); })
+                      .y(function(d) { return y(d.y); })
+                      .interpolate("linear");
+  var lineGraph = svg.append("path")
+                            .attr("d", lineFunction(lineData1))
+                            .attr("stroke", color('setosa'))
+                            .attr("stroke-width", 2)
+                            .attr("fill", "none")
+                            .attr("opacity",.5);
+
+  var lineGraph = svg.append("path")
+                            .attr("d", lineFunction(lineData2))
+                            .attr("stroke", color('versicolor'))
+                            .attr("stroke-width", 2)
+                            .attr("fill", "none")
+                            .attr("opacity",.5);
+
+  var lineGraph = svg.append("path")
+                            .attr("d", lineFunction(lineData3))
+                            .attr("stroke", color('virginica'))
+                            .attr("stroke-width", 2)
+                            .attr("fill", "none")
+                            .attr("opacity",.5);
+
 
   svg.append("g")
       .attr("class", "x axis")
