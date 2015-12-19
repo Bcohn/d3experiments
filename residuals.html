@@ -16,17 +16,30 @@ body {
 .dot {
   stroke: #000;
 }
+.toggle-button { background-color: white; margin: 5px 0; border-radius: 20px; border: 2px solid #D0D0D0; height: 24px; cursor: pointer; width: 50px; position: relative; display: inline-block; user-select: none; -webkit-user-select: none; -ms-user-select: none; -moz-user-select: none; }
+.toggle-button button { cursor: pointer; outline: 0; display:block; position: absolute; left: 0; top: 0; border-radius: 100%; width: 30px; height: 30px; background-color: white; float: left; margin: -3px 0 0 -3px; border: 2px solid #D0D0D0; transition: left 0.3s; }
+.toggle-button-selected { background-color: #83B152; border: 2px solid #7DA652; }
+.toggle-button-selected button { left: 26px; top: 0; margin: 0; border: none; width: 24px; height: 24px; box-shadow: 0 0 4px rgba(0,0,0,0.1); }
 
 </style>
 <body>
+<div class="toggle-button">
+    <button></button>
+</div>
+
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script>
+$(document).on('click', '.toggle-button', function() {
+    $(this).toggleClass('toggle-button-selected'); 
+});
 
 function speciesSelect(array,species){
  return array.filter(function(d){
    return d.species===species;
  });
 }
+
 
 function residuals(array,y,x,regOutput){
   array.forEach(function(d) {
@@ -103,41 +116,17 @@ d3.tsv("data.tsv", function(error, data) {
   
 
   var species=["setosa","virginica","versicolor"];
-  var regressionstats=[];
-  species.forEach(function(d){
-    regressionstats.push(regressionOutput(speciesSelect(data,d),"sepalWidth","sepalLength"));
-    });
+  var regressionstats=regressionOutput(data,"sepalWidth","sepalLength")
+  residuals(data,"sepalLength","sepalWidth",regressionstats)
 
   var xlimits=d3.extent(data, function(d) { return d.sepalWidth;}) 
   xlimits[0]=0;
-  var ylimits=d3.extent(data, function(d) { return d.sepalLength;}) 
-  ylimits[0]=0;
+  var ylimits=d3.extent(data, function(d) { return d.residual;}) 
 
   x.domain(xlimits).nice();
   y.domain(ylimits).nice();
 
   var lineDataMotherload=[];
-  regressionstats.forEach(function(d){
-    lineDataMotherload.push([ { "x": xlimits[0],   "y": d.alpha},  { "x": xlimits[1],  
-      "y":d.alpha+d.beta*xlimits[1]}]);
-  });
-
-
-  var lineFunction = d3.svg.line()
-                      .x(function(d) { return x(d.x); })
-                      .y(function(d) { return y(d.y); })
-                      .interpolate("linear");
-
-  var linePlots = lineDataMotherload.map(lineFunction);
-
-  var lineGraph = svg.selectAll(".line")
-                            .data(linePlots)
-                            .enter().append("path")
-                            .attr("d",function(d){return d;})
-                            .attr("stroke",function(d,i){return color(species[i]);})
-                            .attr("stroke-width", 2)
-                            .attr("fill", "none")
-                            .attr("opacity",.5);
 
 
   svg.append("g")
@@ -149,7 +138,7 @@ d3.tsv("data.tsv", function(error, data) {
       .attr("x", width)
       .attr("y", -6)
       .style("text-anchor", "end")
-      .text("Sepal Width (cm)");
+      .text("Sepal Length (cm)");
 
   svg.append("g")
       .attr("class", "y axis")
@@ -160,7 +149,7 @@ d3.tsv("data.tsv", function(error, data) {
       .attr("y", 6)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-      .text("Sepal Length (cm)")
+      .text("Residuals")
 
   svg.selectAll(".dot")
       .data(data)
@@ -169,7 +158,7 @@ d3.tsv("data.tsv", function(error, data) {
       .attr("class", "dot")
       .attr("r", 3.5)
       .attr("cx", function(d) { return x(d.sepalWidth); })
-      .attr("cy", function(d) { return y(d.sepalLength); })
+      .attr("cy", function(d) { return y(d.residual); })
       .style("fill", function(d) { return color(d.species); });
 
   var legend = svg.selectAll(".legend")
