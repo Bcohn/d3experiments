@@ -19,6 +19,7 @@ body {
 
 </style>
 <body>
+    <!-- HI BRENT! --> 
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script>
 
@@ -94,11 +95,11 @@ d3.tsv("data.tsv", function(error, data) {
     d.sepalLength = +d.sepalLength;
     d.sepalWidth = +d.sepalWidth;
   });
-  
+
   regressionstats=[regressionOutput(speciesSelect(data,"setosa"),"sepalWidth","sepalLength"),regressionOutput(speciesSelect(data,"versicolor"),"sepalWidth","sepalLength"),regressionOutput(speciesSelect(data,"virginica"),"sepalWidth","sepalLength")];
-  var xlimits=d3.extent(data, function(d) { return d.sepalWidth;}) 
+  var xlimits=d3.extent(data, function(d) { return d.sepalWidth;})
   xlimits[0]=0;
-  var ylimits=d3.extent(data, function(d) { return d.sepalLength;}) 
+  var ylimits=d3.extent(data, function(d) { return d.sepalLength;})
   ylimits[0]=0;
 
   x.domain(xlimits).nice();
