@@ -1,0 +1,631 @@
+{
+ "name": "All Diagnoses",
+ "children": [
+  {
+   "name": "Infectious and parasitic diseases",
+   "children": [
+    {
+     "name": "Bacterial infection",
+     "children": [
+      {"name": "Tuberculosis", "size": 3938},
+      {"name": "Septicemia (except in labor)", "size": 3812},
+      {"name": "Sexually transmitted infections (not HIV or hepatitis)", "size": 6714},
+      {"name": "Bacterial infection; unspecified site", "size": 743}
+     ]
+    },
+    {
+     "name": "Mycoses","size": 3938
+    },
+    {
+     "name": "Viral infection",
+     "children": [
+      {"name": "HIV infection", "size": 7074},
+      {"name": "Hepatitis", "size": 7074},
+      {"name": "Viral infection", "size": 7074}
+     ]
+    },
+     {"name": "Other infections; including parasitic","size": 3938},
+     {"name": "Immunizations and screening for infectious disease","size": 3938}
+   ]
+  },
+    {
+   "name": "Neoplasms",
+   "children": [
+    {
+     "name": "Other gastrointestinal cancer",
+     "children": [
+      {"name": "Cancer of esophagus", "size": 3938},
+      {"name": "Cancer of stomach", "size": 3812},
+      {"name": "Cancer of liver and intrahepatic bile duct", "size": 6714},
+      {"name": "Cancer of pancreas", "size": 743},
+      {"name": "Cancer of other GI organs; peritoneum", "size": 743}
+     ]
+    },
+    {
+     "name": "Neoplasms of unspecified nature or uncertain behavior","size": 3938
+    },
+     {
+     "name": "Malignant neoplasm without specification of site","size": 3938
+    },
+         {
+     "name": "Maintenance chemotherapy; radiotherapy","size": 3938
+    },
+    {
+     "name": "Colorectal cancer",
+     "children": [
+      {"name": "Cancer of rectum and anus", "size": 3938},
+      {"name": "Cancer of head and neck", "size": 3812}
+     ]
+    },
+    {
+     "name": "Cancer; other primary",
+     "children": [
+      {"name": "Cancer of head and neck", "size": 7074},
+      {"name": "Cancer; other respiratory and intrathoracic", "size": 7074},
+      {"name": "Cancer of bone and connective tissue", "size": 7074},
+      {"name": "Cancer of brain and nervous system", "size": 7074},
+      {"name": "Cancer of thyroid", "size": 7074},
+      {"name": "Cancer; other and unspecified primary", "size": 7074}
+     ]
+    },
+     {"name": "Secondary malignancies","size": 3938},
+    {
+     "name": "Cancer of uterus and cervix",
+     "children": [
+      {"name": "Cancer of cervix", "size": 3938},
+      {"name": "Cancer of uterus", "size": 3812}
+     ]
+    },
+        {
+     "name": "Cancer of urinary organs",
+     "children": [
+      {"name": "Cancer of bladder", "size": 3938},
+      {"name": "Cancer of kidney and renal pelvis", "size": 3812},
+      {"name": "Cancer of other urinary organs", "size": 3812}
+
+     ]
+    },
+            {
+     "name": "Cancer of skin",
+     "children": [
+      {"name": "Melanomas of skin", "size": 3938},
+      {"name": "Other non-epithelial cancer of skin", "size": 3812}
+
+     ]
+    },
+                {
+     "name": "Cancer of ovary and other female genital organs",
+     "children": [
+      {"name": "Cancer of ovary", "size": 3938},
+      {"name": "Cancer of other female genital organs", "size": 3812}
+
+     ]
+    },
+                    {
+     "name": "Cancer of ovary and other female genital organs",
+     "children": [
+      {"name": "Cancer of prostate", "size": 3938},
+      {"name": "Cancer of testis", "size": 3812},
+      {"name": "Cancer of other male genital organs", "size": 3812}
+      ]},
+                    {
+     "name": "Cancer of lymphatic and hematopoietic tissue",
+     "children": [
+      {"name": "Hodgkin`s disease", "size": 3938},
+      {"name": "Non-Hodgkin`s lymphoma", "size": 3812},
+      {"name": "Leukemias", "size": 3812},
+      {"name": "Multiple myeloma", "size": 3812}
+      ]},
+                    {
+     "name": "Benign Neoplasms",
+     "children": [
+      {"name": "Benign neoplasm of uterus", "size": 3938},
+      {"name": "Other and unspecified benign neoplasm", "size": 3812}]},
+    {
+     "name": "Cancer of bronchus; lung","size": 3938
+    },
+     {
+     "name": "Cancer of breast","size": 3938
+}]
+  },
+  {
+   "name": "Endocrine; nutritional; and metabolic diseases and immunity disorders",
+   "children": [
+      {"name": "Diabetes mellitus without complication", "size": 3938},
+      {"name": "Diabetes mellitus with complications", "size": 3812},
+      {"name": "Other endocrine disorders", "size": 6714},
+      {"name": "Nutritional deficiencies", "size": 743},
+      {"name": "Gout and other crystal arthropathies", "size": 743},
+      {"name": "Fluid and electrolyte disorders", "size": 743},
+      {"name": "Cystic fibrosis", "size": 743},
+      {"name": "Immunity disorders", "size": 743},
+      {"name": "Other nutritional; endocrine; and metabolic disorders", "size": 743}
+  ]},
+    {
+   "name": "Diseases of the blood and blood-forming organs",
+   "children": [      {"name": "Coagulation and hemorrhagic disorders", "size": 3938},
+      {"name": "Diseases of white blood cells", "size": 3812},
+            {"name": "Other hematologic conditions", "size": 3812},
+
+                          {
+     "name": "Anemia",
+     "children": [
+      {"name": "Acute posthemorrhagic anemia", "size": 3938},
+      {"name": "Sickle cell anemia", "size": 3812}]}]},
+        {
+   "name": "Diseases of the nervous system and sense organs",
+   "children": [
+    {
+     "name": "Central nervous system infection",
+     "children": [
+      {"name": "Meningitis", "size": 3938},
+      {"name": "Encephalitis", "size": 3812},
+      {"name": "Other CNS infection and poliomyelitis", "size": 6714}     ]
+    },    {
+     "name": "Hereditary and degenerative nervous system conditions",
+     "children": [
+      {"name": "Parkinson`s disease", "size": 3938},
+      {"name": "Multiple sclerosis", "size": 3812},
+      {"name": "Other hereditary and degenerative nervous system conditions", "size": 6714}     ]
+    },
+
+    {
+     "name": "Paralysis","size": 3938
+    },
+
+    {
+     "name": "Epilepsy; convulsions","size": 3938
+    },
+
+    {
+     "name": "Headache; including migraine","size": 3938
+    },
+
+    {
+     "name": "Coma; stupor; and brain damage","size": 3938
+    },
+        {
+     "name": "Other nervous system disorders","size": 3938
+    },
+
+    {
+     "name": "Ear conditions",
+     "children": [
+      {"name": "Otitis media and related conditions", "size": 7074},
+      {"name": "Conditions associated with dizziness or vertigo", "size": 7074},
+      {"name": "Other ear and sense organ disorders", "size": 7074}
+     ]
+    },
+     {
+     "name": "Eye disorders",
+     "children": [
+      {"name": "Cataract", "size": 3938},
+      {"name": "Retinal detachments; defects; vascular occlusion; and retinopathy", "size": 3812},
+      {"name": "Glaucoma", "size": 6714} ,
+      {"name": "Blindness and vision defects", "size": 6714} ,
+      {"name": "Inflammation; infection of eye", "size": 6714} ,
+      {"name": "Other eye disorders", "size": 6714}
+        ]
+    },
+     {"name": "Other infections; including parasitic","size": 3938},
+     {"name": "Immunizations and screening for infectious disease","size": 3938}
+   ]
+  },
+  {
+   "name": "Diseases of the respiratory system",
+   "children": [
+    {
+     "name": "Respiratory infections",
+     "children": [
+      {"name": "Pneumonia", "size": 3938},
+      {"name": "Influenza", "size": 3812},
+      {"name": "Acute and chronic tonsillitis", "size": 6714},
+      {"name": "Other upper respiratory infections", "size": 3938}
+
+          ]
+    },   
+    {
+     "name": "COPD","size": 3938
+    },
+
+    {
+     "name": "Asthma","size": 3938
+    },
+
+    {
+     "name": "Aspiration pneumonitis; food/vomitus","size": 3938
+    },
+
+    {
+     "name": "Pleurisy; pneumothorax; pulmonary collapse","size": 3938
+    },
+        {
+     "name": "Respiratory failure; insufficiency; arrest (adult)","size": 3938
+    },
+            {
+     "name": "Lung disease due to external agents","size": 3938
+    },
+
+        {
+     "name": "Respiratory failure; insufficiency; arrest (adult)","size": 3938
+    },
+
+       {
+     "name": "Other lower respiratory disease","size": 3938
+    },
+       {
+     "name": "Other upper respiratory disease","size": 3938
+    }
+  ]},
+
+    {
+   "name": "Diseases of the digestive system",
+   "children": [
+    {
+     "name": "Upper gastrointestinal disorders",
+     "children": [
+      {"name": "Esophageal disorders", "size": 3938},
+      {"name": "Gastroduodenal ulcer (except hemorrhage)", "size": 3812},
+      {"name": "Gastritis and duodenitis", "size": 6714},
+      {"name": "Other disorders of stomach and duodenum", "size": 3938}
+          ]
+    },   
+        {
+     "name": "Lower gastrointestinal disorders",
+     "children": [
+      {"name": "Appendicitis and other appendiceal conditions", "size": 3938},
+      {"name": "Regional enteritis and ulcerative colitis", "size": 3812},
+      {"name": "Intestinal obstruction without hernia", "size": 6714},
+      {"name": "Diverticulosis and diverticulitis", "size": 3938},
+      {"name": "Anal and rectal conditions", "size": 3938},
+            {"name": "Peritonitis and intestinal abscess", "size": 3938}
+
+          ]
+    },   
+
+    {
+     "name": "Intestinal infection","size": 3938
+    },
+
+    {
+     "name": "Disorders of teeth and jaw","size": 3938
+    },
+
+    {
+     "name": "Diseases of mouth; excluding dental; food/vomitus","size": 3938
+    },
+
+    {
+     "name": "Liver disease","size": 3938
+    },
+      {
+     "name": "Abdominal hernia","size": 3938
+    } ,
+      {
+     "name": "Gastrointestinal hemorrhage","size": 3938
+    } ,
+      {
+     "name": "Abdominal hernia","size": 3938
+    } ,
+    {
+     "name": "Noninfectious gastroenteritis","size": 3938
+    } , {
+     "name": "Other gastrointestinal disorders","size": 3938
+    } ]},
+
+    {
+   "name": "Diseases of the circulatory system",
+   "children": [
+    {
+     "name": "Diseases of the heart",
+     "children": [
+      {"name": "Heart valve disorders", "size": 3938},
+      {"name": "Peri-; endo-; and myocarditis; cardiomyopathy (except that caused by tuberculosis or sexually transmitted disease)", "size": 3812},
+      {"name": "Acute myocardial infarction", "size": 6714},
+      {"name": "Coronary atherosclerosis and other heart disease", "size": 3938},
+      {"name": "Nonspecific chest pain", "size": 3938},
+            {"name": "Pulmonary heart disease", "size": 3938},
+            {"name": "Other and ill-defined heart disease", "size": 3938},
+            {"name": "Conduction disorders", "size": 3938},
+            {"name": "Cardiac dysrhythmias", "size": 3938},
+            {"name": "Cardiac arrest and ventricular fibrillation", "size": 3938},
+            {"name": "Congestive heart failure; nonhypertensive", "size": 3938}
+
+          ]
+    },   
+        {
+     "name": "Cerebrovascular disease",
+     "children": [
+      {"name": "Acute cerebrovascular disease", "size": 3938},
+      {"name": "Occlusion or stenosis of precerebral arteries", "size": 3812},
+      {"name": "Other and ill-defined cerebrovascular disease", "size": 6714},
+      {"name": "Transient cerebral ischemia", "size": 3938},
+      {"name": "Anal and rectal conditions", "size": 3938},
+            {"name": "Late effects of cerebrovascular disease", "size": 3938}
+
+          ]
+    },   
+        {
+     "name": "Diseases of arteries; arterioles; and capillaries",
+     "children": [
+      {"name": "Peripheral and visceral atherosclerosis", "size": 3938},
+      {"name": "Aortic; peripheral; and visceral artery aneurysms", "size": 3812},
+      {"name": "Aortic and peripheral arterial embolism or thrombosis", "size": 6714},
+      {"name": "Other circulatory disease", "size": 3938},
+      {"name": "Anal and rectal conditions", "size": 3938},
+            {"name": "Late effects of cerebrovascular disease", "size": 3938}
+
+          ]
+    },   
+
+            {
+     "name": "Diseases of veins and lymphatics",
+     "children": [
+      {"name": "Phlebitis; thrombophlebitis and thromboembolism", "size": 3938},
+      {"name": "Varicose veins of lower extremity", "size": 3812},
+      {"name": "Hemorrhoids", "size": 6714},
+      {"name": "Other diseases of veins and lymphatics", "size": 3938}
+          ]
+    },   
+
+            {
+     "name": "Hypertension",
+     "children": [
+      {"name": "Essential hypertension", "size": 3938},
+      {"name": "Hypertension with complications and secondary hypertension", "size": 3812}
+   
+          ]
+    }
+]},
+    {
+   "name": "Diseases of the genitourinary system",
+   "children": [
+    {
+     "name": "Diseases of the urinary system",
+     "children": [
+      {"name": "Nephritis; nephrosis; renal sclerosis", "size": 3938},
+      {"name": "Acute and unspecified renal failure", "size": 3812},
+      {"name": "Chronic kidney disease", "size": 6714},
+      {"name": "Urinary tract infections", "size": 3938},
+      {"name": "Calculus of urinary tract", "size": 3938},
+            {"name": "Other diseases of kidney and ureters", "size": 3938},
+            {"name": "Other diseases of bladder and urethra", "size": 3938},
+            {"name": "Genitourinary symptoms and ill-defined conditions", "size": 3938}
+          ]
+    },   
+        {
+     "name": "Diseases of male genital organs",
+     "children": [
+      {"name": "Hyperplasia of prostate", "size": 3938},
+      {"name": "Inflammatory conditions of male genital organs", "size": 3812},
+      {"name": "Other male genital disorders", "size": 6714}
+          ]
+    },   
+        {
+     "name": "Diseases of female genital organs",
+     "children": [
+      {"name": "Nonmalignant breast conditions", "size": 3938},
+      {"name": "Inflammatory diseases of female pelvic organs", "size": 3812},
+      {"name": "Endometriosis", "size": 6714},
+      {"name": "Prolapse of female genital organs", "size": 3938},
+      {"name": "Menstrual disorders", "size": 3938},
+            {"name": "Ovarian cyst", "size": 3938},
+            {"name": "Menopausal disorders", "size": 3938},
+            {"name": "Female infertility", "size": 3938},
+            {"name": "Other female genital disorders", "size": 3938}
+          ]
+    }
+]},
+    {
+   "name": "Complications of pregnancy; childbirth; and the puerperium",
+   "children": [
+    {
+     "name": "Complications mainly related to pregnancy",
+     "children": [
+      {"name": "Ectopic pregnancy", "size": 3938},
+      {"name": "Other complications of pregnancy", "size": 3812},
+      {"name": "Hemorrhage during pregnancy; abruptio placenta; placenta previa", "size": 6714},
+      {"name": "Hypertension complicating pregnancy; childbirth and the puerperium", "size": 3938},
+      {"name": "Early or threatened labor", "size": 3938},
+            {"name": "Prolonged pregnancy", "size": 3938},
+            {"name": "Diabetes or abnormal glucose tolerance complicating pregnancy; childbirth; or the puerperium", "size": 3938}          ]
+    },   
+        {
+     "name": "Indications for care in pregnancy; labor; and delivery",
+     "children": [
+      {"name": "Malposition; malpresentation", "size": 3938},
+      {"name": "Fetopelvic disproportion; obstruction", "size": 3812},
+      {"name": "Previous C-section", "size": 6714},
+      {"name": "Fetal distress and abnormal forces of labor", "size": 6714},
+      {"name": "Polyhydramnios and other problems of amniotic cavity", "size": 6714}
+
+          ]
+    },   
+        {
+     "name": "Complications during labor",
+     "children": [
+      {"name": "Umbilical cord complication", "size": 3938},
+      {"name": "OB-related trauma to perineum and vulva", "size": 3812},
+      {"name": "Forceps delivery", "size": 6714}          ]
+    },
+    {
+     "name": "Other complications of birth; puerperium affecting management of mother","size": 3938
+    } , {
+     "name": "Normal pregnancy and/or delivery","size": 3938
+    } 
+]}, 
+    {
+     "name": "Diseases of the skin and subcutaneous tissue",
+     "children": [
+      {"name": "Skin and subcutaneous tissue infections", "size": 3938},
+      {"name": "Other inflammatory condition of skin", "size": 3812},
+      {"name": "Chronic ulcer of skin", "size": 6714},
+      {"name": "Other skin disorders", "size": 3938}]},
+
+    {
+   "name": "Diseases of the musculoskeletal system and connective tissue",
+   "children": [
+    {
+     "name": "Non-traumatic joint disorders",
+     "children": [
+      {"name": "Rheumatoid arthritis and related disease", "size": 3938},
+      {"name": "Osteoarthritis", "size": 3812},
+      {"name": "Other non-traumatic joint disorders", "size": 6714}]
+    },   
+        {
+     "name": "Acquired deformities",
+     "children": [
+      {"name": "Acquired foot deformities", "size": 3938},
+      {"name": "Other acquired deformities", "size": 3812}          ]
+    },  
+      {"name": "Osteoporosis", "size": 3938},
+      {"name": "Pathological fracture", "size": 3812},
+      {"name": "Systemic lupus erythematosus", "size": 6714},
+      {"name": "Other connective tissue disease", "size": 3938},
+      {"name": "Other bone disease and musculoskeletal deformities", "size": 3938},
+            {"name": "Infective arthritis and osteomyelitis", "size": 3938}          ]
+    },
+     {
+     "name": "Congenital Anomalies",
+     "children": [
+      {"name": "Cardiac and circulatory congenital anomalies", "size": 3938},
+      {"name": "Digestive congenital anomalies", "size": 3812},
+      {"name": "Genitourinary congenital anomalies", "size": 6714},
+      {"name": "Nervous system congenital anomalies", "size": 6714},
+      {"name": "Other congenital anomalies", "size": 6714}
+
+          ]
+    },  
+         {
+     "name": "Certain conditions originating in the perinatal period",
+     "children": [
+      {"name": "Liveborn", "size": 3938},
+      {"name": "Short gestation; low birth weight; and fetal growth retardation", "size": 3812},
+      {"name": "Intrauterine hypoxia and birth asphyxia", "size": 6714},
+      {"name": "Respiratory distress syndrome", "size": 6714},
+      {"name": "Hemolytic jaundice and perinatal jaundice", "size": 6714},
+      {"name": "Birth trauma", "size": 6714},
+      {"name": "Other perinatal conditions", "size": 6714}
+
+          ]
+    },  
+
+    {
+   "name": "Injury and poisoning",
+   "children": [
+    {
+     "name": "Fractures",
+     "children": [
+      {"name": "Skull and face fractures", "size": 3938},
+      {"name": "Fracture of upper limb", "size": 3812},
+      {"name": "Fracture of lower limb", "size": 6714},
+      {"name": "Other fractures", "size": 3938}        ]
+    },   {"name": "Sprains and strains", "size": 6714},
+    {"name": "Intracranial injury", "size": 6714}
+    ,{"name": "Crushing injury or internal injury", "size": 6714},
+        {
+     "name": "Open wounds",
+     "children": [
+      {"name": "Open wounds of head; neck; and trunk", "size": 3938},
+      {"name": "Open wounds of extremities", "size": 3812}
+          ]
+    },   
+        {
+     "name": "Complications",
+     "children": [
+      {"name": "Complication of device; implant or graft", "size": 3938},
+      {"name": "Complications of surgical procedures or medical care", "size": 3812}]},
+    {
+     "name": "Superficial injury; contusion","size": 3938
+    } , {
+     "name": "Burns","size": 3938
+    } ,
+    {
+     "name": "Other injuries and conditions due to external causes","size": 3938
+    } ,
+     {
+     "name": "Poisoning",
+     "children": [
+      {"name": "Poisoning by psychotropic agents", "size": 3938},
+      {"name": "Poisoning by other medications and drugs", "size": 3812},
+      {"name": "Poisoning by nonmedicinal substances", "size": 3812}
+      ]}      
+      ]},
+
+    {
+   "name": "Symptoms; signs; and ill-defined conditions and factors influencing health status",
+   "children": [
+    {
+     "name": "Symptoms; signs; and ill-defined conditions",
+     "children": [
+      {"name": "Syncope", "size": 3938},
+      {"name": "Fever of unknown origin", "size": 3812},
+      {"name": "Lymphadenitis", "size": 6714},
+      {"name": "Gangrene", "size": 3938},
+       {"name": "Shock", "size": 3938},      
+        {"name": "Nausea and vomiting", "size": 3938},  
+         {"name": "Abdominal pain", "size": 3938},  
+          {"name": "Allergic reactions", "size": 3938}         ]},
+       {
+     "name": "Factors influencing health care",
+     "children": [
+      {"name": "Rehabilitation care; fitting of prostheses; and adjustment of devices", "size": 3938},
+      {"name": "Administrative/social admission", "size": 3812},
+      {"name": "Medical examination/evaluation", "size": 6714},
+      {"name": "Other aftercare", "size": 3938},
+       {"name": "Other screening for suspected conditions (not mental disorders or infectious disease)", "size": 3938}]}]},
+         {
+     "name": "Mental Illness",
+     "children": [
+      {"name": "Adjustment disorders", "size": 3938},
+      {"name": "Anxiety disorders", "size": 3812},
+      {"name": "Delirium dementia and amnestic and other cognitive disorders", "size": 6714},
+      {"name": "Developmental disorders", "size": 6714},
+      {"name": "Disorders usually diagnosed in infancy childhood or adolescence", "size": 6714},
+      {"name": "Impulse control disorders NEC", "size": 6714},
+      {"name": "Mood disorders", "size": 6714},
+      {"name": "Schizophrenia and other psychotic disorders", "size": 6714},
+      {"name": "Alcohol-related disorders", "size": 6714},
+      {"name": "Substance-related disorders", "size": 6714},
+      {"name": "Suicide and intentional self-inflicted injury", "size": 6714},
+      {"name": "Screening and history of mental health and substance abuse codes", "size": 6714},
+      {"name": "Miscellaneous disorders", "size": 6714}]},
+
+
+    {
+   "name": "External Cause and Adverse Effects",
+   "children": [
+    {
+     "name": "External Cause",
+     "children": [
+      {"name": "Cut/pierce", "size": 3938},
+      {"name": "Drowning/submersion", "size": 3812},
+      {"name": "Fall", "size": 6714},
+      {"name": "Fire/burn", "size": 3938},
+       {"name": "Firearm", "size": 3938},      
+        {"name": "Machinery", "size": 3938},  
+         {"name": "Motor vehicle", "size": 3938},  
+          {"name": "Pedal cyclist", "size": 3938},
+          {"name": "Pedestrian", "size": 3938},
+          {"name": "Transport", "size": 3938},
+          {"name": "Natural/environment", "size": 3938},
+          {"name": "Overexertion", "size": 3938},
+          {"name": "Poisoning", "size": 3938},
+          {"name": "Struck by; against", "size": 3938},
+          {"name": "Suffocation", "size": 3938}]},
+    {
+     "name": "Adverse Effects",
+     "children": [
+      {"name": "Adverse effects of medical drugs", "size": 3938},
+      {"name": "Adverse effects of medical care", "size": 3812}]}
+
+
+                   ]}
+
+
+
+
+
+]}
+
+

@@ -1,0 +1,17 @@
+{
+ "name": "All Diagnoses",
+ "children": [
+  {
+   "name": "Infectious and parasitic diseases",
+   "children": [
+    {
+     "name": "Bacterial infection",
+     "children": [
+      {"name": "Tuberculosis", "size": 3938},
+      {"name": "Septicemia (except in labor)", "size": 3812},
+      {"name": "Sexually transmitted infections (not HIV or hepatitis)", "size": 6714},
+      {"name": "Bacterial infection; unspecified site", "size": 743}
+     ]}]}]}
+
+
+     
