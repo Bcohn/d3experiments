@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+.background {
+  fill: none;
+  pointer-events: all;
+}
+.ers {
+    opacity: 0.25;
+    fill: #e0e0e0;
+    cursor: pointer;
+}
+.ers:hover {
+    opacity: 1;
+}
+/* The hover and mouseover areas of .ers are different. Sometimes shows name/info but doesn't activate hover class */
+.ers.active {
+  fill: orange;
+}
+.border {
+  fill: none;
+  stroke: #000;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+path {
+  stroke: #000;
+  stroke-width: 0.1;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+</style>
+<body>
+
+<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+
+<script>
+
+var width = 1080,
+    height = 580,
+    centered;
+
+var proj = d3.geo.albers()
+    .center([0,54])
+    .rotate([92.5,0])
+    .parallels([49,56])
+    .scale(1200)
+    .translate([width/2, height/2]);
+
+var path = d3.geo.path()
+    .projection(proj);
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+    .attr("class", "back")
+    .on("click", stopped, true);
+
+svg.append("rect")
+    .attr("class", "background")
+    .attr("width", width)
+    .attr("height", height)
+    .on("click", reset);
+
+var g=svg.append("g");
+
+queue().defer(d3.json, "can.json").await(ready);
+//queue().defer(d3.json, "can.json").defer(d3.csv, "pop.csv").await(ready);
+
+function ready(error, can, data) {
+    console.log(data);
+    if (error) return console.error(error);
+
+    g.selectAll(".ers")
+        .data(topojson.feature(can, can.objects.ers).features)
+        .enter().append("path")
+        .attr("class","ers")
+        .attr("d",path)
+//        .on('mouseover', erInfo)
+        .on('click', clicked);
+
+    g.append("path")
+        .datum(topojson.mesh(can,can.objects.provs, function(a,b) { return a!==b || a===b; }))
+        .attr("class","border") //border--provs")
+        .attr("d",path);
+
+}
+
+d3.select(self.frameElement).style("height", height + "px");
+
+
+</script>
+</body>
